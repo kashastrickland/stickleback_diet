@@ -1,0 +1,26 @@
+
+mvl<-bf(scale(length)~sex+(1|p|Site))
+mvgl<-bf(scale(gut_length)~sex+scale(length)+(1|p|Site))
+mvgr2<-bf(scale(NR.2)~sex+scale(length)+(1|p|Site))
+mvgap<-bf(scale(Gap)~sex+scale(length)+(1|p|Site))
+mvPC1<-bf(scale(Comp1)~sex+scale(length)+(1|p|Site))
+mvPC2<-bf(scale(Comp2)~sex+scale(length)+(1|p|Site))
+mvPC3<-bf(scale(Comp3)~sex+scale(length)+(1|p|Site))
+
+fit1 <- brm(mvl+mvgl+mvgr2+mvgap+mvPC1+mvPC2+mvPC3+set_rescor(TRUE),
+data = morph, control =list(adapt_delta=0.99,max_treedepth=15),chains = 4, cores = 4)
+
+
+
+Dietary abundance ~ Length + Gut length + Gap width + Raker length +
+PC1 + PC2 + PC3 + Sex
+                    		(1 | Taxon + Site + Taxon : Site + Taxon : Sex + FishID) +
+                    		(0 + Length | taxon) +
+                    		(0 + Gut length | taxon) +
+                    		(0 + Gap width | taxon) +
+                    		(0 + Raker length | taxon) +
+                    		(0 + PC1 | taxon) +
+                    		(0 + PC2 | taxon) +
+                    		(0 + PC3 | taxon)
+Zero inflation rate ~ (1 | taxon)
+family = zero_inflated_poisson("log")
