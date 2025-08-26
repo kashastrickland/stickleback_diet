@@ -1,0 +1,11 @@
+taxon,prevalence,abundance_mean,abundance_median,abundance_sd
+adult_fly,0.44,2.74,0,5.75
+chrinominae,0.29,1.19,0,2.87
+orthocladinae,0.29,2.4,0,9.38
+alona,0.27,5.11,0,24.4
+copepods,0.22,6.51,0,29.39
+tanypodinae,0.12,0.41,0,1.87
+mollusks,0.1,0.21,0,0.86
+stickleback_eggs,0.1,0.86,0,4.02
+other_cladocerans,0.09,0.72,0,5.11
+ostracod,0.05,0.31,0,1.71
