@@ -1,3 +1,6 @@
+#############################
+## Author: Ragna Snorradottir, 2024
+
 ### Set working director
 
 ### Load Libraries
