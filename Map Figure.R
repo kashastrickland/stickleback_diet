@@ -1,3 +1,6 @@
+#############################
+## Author: Joseph Phillips, 2025
+
 # Load packages
 library(tidyverse)
 # library(lemon)
