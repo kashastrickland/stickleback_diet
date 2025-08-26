@@ -1,3 +1,5 @@
+#############################
+## Author: Kasha Strickland, 2025
 
 library(RInSp)
 library(vegan)
