@@ -3,7 +3,7 @@ in relation to trophic morphology" by Snorradóttir et al..
 
 Data are contained within the /data subfolder. Contained in the folder are the following main dataframes:
 
-"**dissection_data.csv**" contains the raw format of diet and morphological data used in analyses. 
+"**dissection_data.csv**" contains the raw format of diet and morphological data used in analyses;
 "**Myvatn_WSGUTM28.shp**" is the shape file require to reproduce the map in figure 1
 Files ending in "**.TPS**" are the landmarked data required for geometric morphometric analyses
 
