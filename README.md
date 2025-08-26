@@ -14,7 +14,7 @@ R code to reproduce all results include:
 "**Prepare Data.R**" organises the raw data for analysis as described in the manuscript, and also reproduced Figure 1B and Table S1.  
 "**morphdivergence_And_dietspecialisation.R**" reproduced RDA analysis, analysis for spatial divergence in morphology, analyses of PSi (i.e., diet specialisation). Also reproduces Tables 1, 3 and 4, and Figures 3 and 6.   
 "**Fit Taxon-Specific Models.R**" runs models for diet variation through space and according to morphology.  
-"**Derived Quantities for Visualisation.R**" processes model output from Fit Taxon-Sppecific Models.R to prepare for visualisation in Figures 4 and 5.  
+"**Derived Quantities for Visualisation.R**" processes model output from Fit Taxon-Specific Models.R to prepare for visualisation in Figures 4 and 5.  
 "**Visualise Taxon-Specific Responses.R**" reproces Figures 4 and 5.  
 
   For all code explained above authorship is noted at the top of the code.  
