@@ -297,3 +297,6 @@ SL_niche<-WTcMC(SL_spec,weight="N_items",replicates=1500)
 psi_SL<-PSicalc(SL_spec,pop.diet = "average",replicates=1500)
 hist(psi_SL$PSi)
 dietSL$PSiSL<-psi_SL$PSi
+
+###end
+
