@@ -45,8 +45,8 @@ table1<-data.frame(Trait=c("Body length","Gut length","Gill raker length","Gill 
                     Bodylength=paste0(c("",morph_feSPL[[2]]$Estimate)," (",c("",morph_feSPL[[2]]$Q5),"; ",c("",morph_feSPL[[2]]$Q95),")"))
 
 morph_re<-brms::VarCorr(fit1,probs = c(0.05,0.95))
-table1$Site<-paste0(round(morph_re$Site$sd[,1],3)," (",round(morph_re$Site$sd[,2],3),"; ",round(morph_re$Site$sd[,3],3),")")
-table1$REsidual<-paste0(round(morph_re$residual__$sd[,1],3)," (",round(morph_re$residual__$sd[,2],3),"; ",round(morph_re$residual__$sd[,3],3),")")
+table1$Site<-paste0(round(morph_re$Site$sd[,1],2)," (",round(morph_re$Site$sd[,3],2),"; ",round(morph_re$Site$sd[,4],2),")")
+table1$Residual<-paste0(round(morph_re$residual__$sd[,1],2)," (",round(morph_re$residual__$sd[,3],2),"; ",round(morph_re$residual__$sd[,4],2),")")
 write.table(table1,"tables_figures/table1.txt",sep="\t",row.names = F,quote=F)
 
 
